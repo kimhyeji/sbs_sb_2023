@@ -133,6 +133,8 @@ insert into article
 (
     regDate, updateDate, memberId, boardId, title, `body`
 )
-select now(), now(), FLOOR(RAND() * 3) + 1, FLOOR(RAND() * 2) + 1, concat('제목_', rand()), CONCAT('내용_', RAND())
+select now(), now(), FLOOR(RAND() * 3) + 1, FLOOR(RAND() * 2) + 1, CONCAT('제목 ', FLOOR(RAND() * 1000)), CONCAT('내용 ', FLOOR(RAND() * 1000))
 from article;
 */
+
+SELECT * FROM article;
